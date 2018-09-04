@@ -8,13 +8,13 @@
 
 @media (min-width: 900px) {
   :root {
-    --title-position-x: 120px;
+    --title-position-x: 60px;
   }
 }
 
 @media (min-width: 1200px) {
   :root {
-    --title-position-x: 180px;
+    --title-position-x: 120px;
   }
 }
 
@@ -26,7 +26,7 @@
 
 @media (min-width: 2000px) {
   :root {
-    --title-position-x: 50%;
+    --title-position-x: 25%;
   }
 }
 
@@ -38,11 +38,17 @@
 
 @media (min-height: 400px) {
   :root {
+    --title-position-y: 180px;
+  }
+}
+
+@media (min-height: 500px) {
+  :root {
     --title-position-y: 240px;
   }
 }
 
-@media (min-height: 600px) {
+@media (min-height: 700px) {
   :root {
     --title-position-y: 300px;
   }
@@ -230,7 +236,7 @@
   }
 }
 
-@media (max-aspect-ratio: 16/9) {
+@media (max-aspect-ratio: 10/11) {
   .setDiv {
     flex-direction: column;
   }
