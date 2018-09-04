@@ -66,6 +66,26 @@
   }
 }
 
+@keyframes opening-bg-x {
+  from {
+    height: 0;
+  }
+
+  to {
+    height: 100%;
+  }
+}
+
+@keyframes opening-bg-y {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
 @keyframes opening-h1 {
   from {
     width: 0;
@@ -140,52 +160,93 @@
   width: 100vw;
   color: rgba(255, 249, 245, 1);
   #bg {
+    height: 100%;
+    width: 100%;
     $border-line: rgba(158, 158, 158, .4);
     $inner-line: rgba(158, 158, 158, .2);
     z-index: -10;
     position: absolute;
-    animation: 1.5s opening-bg ease-in-out forwards;
-    background: -webkit-repeating-linear-gradient(270deg,
-            $border-line,
-            $border-line 1px,
-            transparent 1px,
-            transparent 12px,
-            $inner-line 12px,
-            $inner-line 13px,
-            transparent 13px,
-            transparent 24px,
-            $inner-line 24px,
-            $inner-line 25px,
-            transparent 25px,
-            transparent 36px,
-            $inner-line 36px,
-            $inner-line 37px,
-            transparent 37px,
-            transparent 48px,
-            $inner-line 48px,
-            $inner-line 49px,
-            transparent 49px,
-            transparent 60px), -webkit-repeating-linear-gradient(0deg,
-            $border-line,
-            $border-line 1px,
-            transparent 1px,
-            transparent 12px,
-            $inner-line 12px,
-            $inner-line 13px,
-            transparent 13px,
-            transparent 24px,
-            $inner-line 24px,
-            $inner-line 25px,
-            transparent 25px,
-            transparent 36px,
-            $inner-line 36px,
-            $inner-line 37px,
-            transparent 37px,
-            transparent 48px,
-            $inner-line 48px,
-            $inner-line 49px,
-            transparent 49px,
-            transparent 60px);
+    //animation: 1.5s opening-bg ease-in-out forwards;
+    #bg-x {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      #bg-thin-x {
+        position: absolute;
+        animation: 750ms opening-bg-x ease-in-out both;
+        height: 100%;
+        width: 100%;
+        background: -webkit-repeating-linear-gradient(270deg,
+                transparent,
+                transparent 12px,
+                $inner-line 12px,
+                $inner-line 13px,
+                transparent 13px,
+                transparent 24px,
+                $inner-line 24px,
+                $inner-line 25px,
+                transparent 25px,
+                transparent 36px,
+                $inner-line 36px,
+                $inner-line 37px,
+                transparent 37px,
+                transparent 48px,
+                $inner-line 48px,
+                $inner-line 49px,
+                transparent 49px,
+                transparent 60px);
+      }
+      #bg-bold-x {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: -webkit-repeating-linear-gradient(270deg,
+                $border-line,
+                $border-line 1px,
+                transparent 1px,
+                transparent 60px);
+      }
+    }
+    #bg-y {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      #bg-thin-y {
+        position: absolute;
+        animation: 750ms opening-bg-y ease-in-out both 750ms;
+        height: 100%;
+        width: 100%;
+        background: -webkit-repeating-linear-gradient(0deg,
+                transparent,
+                transparent 12px,
+                $inner-line 12px,
+                $inner-line 13px,
+                transparent 13px,
+                transparent 24px,
+                $inner-line 24px,
+                $inner-line 25px,
+                transparent 25px,
+                transparent 36px,
+                $inner-line 36px,
+                $inner-line 37px,
+                transparent 37px,
+                transparent 48px,
+                $inner-line 48px,
+                $inner-line 49px,
+                transparent 49px,
+                transparent 60px);
+      }
+      #bg-bold-y {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: -webkit-repeating-linear-gradient(0deg,
+                $border-line,
+                $border-line 1px,
+                transparent 1px,
+                transparent 60px);
+      }
+    }
   }
   #title {
     margin-top: var(--title-position-y);
