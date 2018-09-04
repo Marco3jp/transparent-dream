@@ -215,13 +215,14 @@
     margin-top: calc(var(--title-position-y) - 120px);
     ul {
       li {
-        color: rgba(139, 195, 74, 1);
         height: 60px;
         overflow: hidden;
         a {
           line-height: 60px;
           font-size: 45px;
           font-family: 'Muli-Light', 'Roboto', sans-serif;
+          text-decoration: none;
+          color: rgba(139, 195, 74, 1);
         }
       }
       li:first-child {
