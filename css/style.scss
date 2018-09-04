@@ -83,20 +83,15 @@
   }
 }
 
-@keyframes opening-h1-transparent {
   from {
     color: white;
-    text-shadow: 0 0 10px rgba(139, 195, 74, 1);
+    filter: drop-shadow(0 0 3px rgba(139, 195, 74, 1));
   }
 
-  50% {
-    color: white;
-    text-shadow: 0 0 10px rgba(139, 195, 74, 1);
-  }
 
   to {
     color: rgba(139, 195, 74, 1);
-    text-shadow: unset;
+    filter: unset;
   }
 }
 
