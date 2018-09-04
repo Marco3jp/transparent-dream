@@ -253,7 +253,7 @@
     width: 50%;
     h1 {
       margin-left: var(--title-position-x);
-      animation: 1.5s opening-h1 ease-in-out forwards;
+      animation: 1s opening-h1 ease-in-out forwards;
       overflow: hidden;
       color: rgba(139, 195, 74, 1);
       font-weight: unset;
@@ -264,7 +264,7 @@
       }
       span:first-child {
         margin-right: 10px;
-        animation: 3s opening-h1-transparent ease-in-out forwards;
+        animation: 750ms opening-h1-transparent ease-in-out both 1s;
       }
     }
   }
@@ -295,19 +295,19 @@
       li:nth-child(1) {
         animation: 0.5s opening-index-up ease-in-out both;
         a {
-          animation: 0.5s opening-index-shadow ease-in-out both 3s;
+          animation: 0.5s opening-index-shadow ease-in-out both 1s;
         }
       }
       li:nth-child(2) {
-        animation: 0.5s opening-index-up ease-in-out both .5s;
+        animation: 0.5s opening-index-up ease-in-out both .25s;
         a {
-          animation: 0.5s opening-index-shadow ease-in-out both 3.5s;
+          animation: 0.5s opening-index-shadow ease-in-out both 1.5s;
         }
       }
       li:nth-child(3) {
-        animation: 0.5s opening-index-up ease-in-out both 1s;
+        animation: 0.5s opening-index-up ease-in-out both .5s;
         a {
-          animation: 0.5s opening-index-shadow ease-in-out both 4s;
+          animation: 0.5s opening-index-shadow ease-in-out both 2s;
         }
       }
     }
