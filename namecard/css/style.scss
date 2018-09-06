@@ -62,10 +62,10 @@
         bottom: 0;
         left: 0;
         right: 0;
-        padding-left: 15px;
+        padding-left: 30px;
         padding-top: 90px;
         @media (min-width: 1000px) {
-          padding-left: 30px;
+          padding-left: 45px;
           padding-top: 120px;
         }
         @media (min-width: 1400px) {
@@ -136,25 +136,112 @@
       }
       #namecard-after {
         width: 50%;
+        padding-top: 60px;
+        padding-left: 15px;
+        @media (min-width: 1000px) {
+          padding-top: 75px;
+          padding-left: 30px;
+        }
+        @media (min-width: 1400px) {
+          padding-top: 90px;
+          padding-left: 45px;
+        }
+        @media (min-width: 1600px) {
+          padding-top: 120px;
+          padding-left: 60px;
+        }
+        $line-height-h2: 36px;
+        $font-size-h2: $line-height-h2 - 6px;
+        $line-height-li: $font-size-h2;
+        $font-size-li: $line-height-li - 6px;
+        h2:before {
+          display: inline-block;
+          position: absolute;
+          content: "";
+          width: $line-height-h2;
+          height: $line-height-h2;
+        }
+        h2 {
+          font-size: $font-size-h2;
+          line-height: $line-height-h2;
+          font-weight: unset;
+          span {
+            margin-left: $line-height-h2;
+          }
+        }
+        ul {
+          list-style: none;
+          li:before {
+            display: inline-block;
+            position: absolute;
+            content: "";
+            width: $line-height-li;
+            height: $line-height-li;
+          }
+          li {
+            font-size: $font-size-li;
+            line-height: $line-height-li;
+            span {
+              margin-left: $line-height-li;
+            }
+          }
+        }
+        $icon-size-h2: $font-size-h2 $font-size-h2;
+        $icon-size-li: $font-size-li $font-size-li;
         #namecard-after-skill {
           #namecard-after-skill-it {
-
+            h2:before {
+              background: url(../../font/thumbs-up-regular.svg) no-repeat center/$icon-size-h2;
+            }
+            ul {
+              li:nth-child(1):before {
+                background: url(../../font/js-brands.svg) no-repeat center/$icon-size-li;
+              }
+              li:nth-child(2):before {
+                background: url(../../font/css3-brands.svg) no-repeat center/$icon-size-li;
+              }
+            }
           }
           #namecard-after-skill-hobby {
-
+            margin-top: 15px;
+            @media (min-width: 1000px) {
+              margin-top: 30px;
+            }
+            @media (min-width: 1400px) {
+              margin-top: 45px;
+            }
+            @media (min-width: 1600px) {
+              margin-top: 60px;
+            }
+            h2:before {
+              background: url(../../font/heart-solid.svg) no-repeat center/$icon-size-h2;
+            }
+            ul {
+              li:nth-child(1):before {
+                background: url(../../font/gamepad-solid.svg) no-repeat center/$icon-size-li;
+              }
+              li:nth-child(2):before {
+                background: url(../../font/keyboard-regular.svg) no-repeat center/$icon-size-li;
+              }
+            }
           }
         }
         #namecard-after-links {
-          #namecard-after-links-hp {
-
+          margin-top: 15px;
+          @media (min-width: 1000px) {
+            margin-top: 30px;
           }
-          #namecard-after-links-detail {
-
+          @media (min-width: 1400px) {
+            margin-top: 45px;
+          }
+          @media (min-width: 1600px) {
+            margin-top: 60px;
+          }
+          h2:before {
+            background: url(../../font/home-solid.svg) no-repeat center/$icon-size-h2;
           }
         }
-
       }
-
     }
   }
 }
