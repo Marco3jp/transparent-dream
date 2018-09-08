@@ -245,3 +245,62 @@
     }
   }
 }
+
+@media (max-aspect-ratio: 10/11) {
+  #wrapper {
+    #content {
+      .setDiv {
+        flex-direction: column;
+      }
+      #namecard {
+        height: 672px;
+        width: 420px;
+        padding-left: 30px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        #namecard-before {
+          width: 100%;
+          height: 40%;
+          padding-top: 90px;
+          #namecard-before-hn {
+            height: 60px;
+            font-size: 45px;
+          }
+          #namecard-before-twitter a:before, #namecard-before-github a:before {
+            width: 50px;
+            height: 50px;
+          }
+          
+          #namecard-before-twitter, #namecard-before-github {
+            height: 50px;
+            line-height: 50px;
+            font-size: 35px;
+            a {
+              height: 50px;
+              span {
+                margin-left: 50px;
+              }
+            }
+          }
+        }
+        #namecard-after {
+          width: 100%;
+          height: 60%;
+          padding-top: 12px;
+          padding-left: 30px;
+          #namecard-after-skill {
+            #namecard-after-skill-hobby {
+              margin-top: 20px;
+            }
+          }
+          #namecard-after-links {
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+}
