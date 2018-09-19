@@ -36,23 +36,15 @@
       width: 100%;
       background: -webkit-repeating-linear-gradient(270deg,
               transparent,
-              transparent 12px,
-              $inner-line 12px,
-              $inner-line 13px,
-              transparent 13px,
-              transparent 24px,
-              $inner-line 24px,
-              $inner-line 25px,
-              transparent 25px,
-              transparent 36px,
-              $inner-line 36px,
-              $inner-line 37px,
-              transparent 37px,
-              transparent 48px,
-              $inner-line 48px,
-              $inner-line 49px,
-              transparent 49px,
-              transparent 60px);
+              transparent 10px,
+              $inner-line 10px,
+              $inner-line 11px,
+              transparent 11px,
+              transparent 20px,
+              $inner-line 20px,
+              $inner-line 21px,
+              transparent 21px,
+              transparent 30px);
     }
     #bg-bold-x {
       position: absolute;
@@ -62,7 +54,7 @@
               $border-line,
               $border-line 1px,
               transparent 1px,
-              transparent 60px);
+              transparent 30px);
     }
   }
   #bg-y {
@@ -76,23 +68,15 @@
       width: 100%;
       background: -webkit-repeating-linear-gradient(0deg,
               transparent,
-              transparent 12px,
-              $inner-line 12px,
-              $inner-line 13px,
-              transparent 13px,
-              transparent 24px,
-              $inner-line 24px,
-              $inner-line 25px,
-              transparent 25px,
-              transparent 36px,
-              $inner-line 36px,
-              $inner-line 37px,
-              transparent 37px,
-              transparent 48px,
-              $inner-line 48px,
-              $inner-line 49px,
-              transparent 49px,
-              transparent 60px);
+              transparent 10px,
+              $inner-line 10px,
+              $inner-line 11px,
+              transparent 11px,
+              transparent 20px,
+              $inner-line 20px,
+              $inner-line 21px,
+              transparent 21px,
+              transparent 30px);
     }
     #bg-bold-y {
       position: absolute;
@@ -102,7 +86,7 @@
               $border-line,
               $border-line 1px,
               transparent 1px,
-              transparent 60px);
+              transparent 30px);
     }
   }
 }
