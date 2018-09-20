@@ -1,0 +1,176 @@
+@font-face {
+  font-family: 'Roboto-Light';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url("../../font/Roboto-Light.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@keyframes opening-opacity {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  letter-spacing: 1px;
+  font-family: "Roboto-Light", "Roboto", "游ゴシック体", "Yu Gothic", YuGothic, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+h1, h2 {
+  font-weight: unset;
+}
+
+ul {
+  list-style: none;
+}
+
+#wrapper {
+  #content {
+    animation: .75s opening-opacity ease-in-out forwards;
+    width: 100vw;
+    margin: auto;
+    #profile {
+      color: black;
+      ul > li {
+        text-align: center;
+      }
+      h1:before {
+        position: absolute;
+        content: "";
+        height: 2px;
+        width: 500px;
+        background: -webkit-linear-gradient(0deg, transparent, rgba(139, 195, 74, .5) 25%, rgba(139, 195, 74, 1));
+        margin-left: -530px;
+        margin-top: 30px;
+      }
+      h1 {
+        span {
+          font-size: 60px;
+          font-family: "Roboto-Light", "Roboto", "游ゴシック体", "Yu Gothic", YuGothic, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+          height: 60px;
+          width: 180px;
+          display: inline-block;
+        }
+        height: 90px;
+        width: 100%;
+        text-align: center;
+        margin: auto;
+        padding-top: 30px;
+        letter-spacing: 2px;
+        position: relative;
+        overflow: hidden;
+      }
+      h1:after {
+        position: absolute;
+        content: "";
+        height: 2px;
+        width: 500px;
+        background: -webkit-linear-gradient(0deg, rgba(139, 195, 74, 1), rgba(139, 195, 74, .5) 75%, transparent);
+        margin-top: 30px;
+        margin-left: 30px;
+      }
+      h2:before {
+        position: absolute;
+        content: "";
+        height: 1px;
+        width: 300px;
+        background: -webkit-linear-gradient(0deg, transparent, rgba(139, 195, 74, .5) 25%, rgba(139, 195, 74, 1));
+        margin-left: -330px;
+        margin-top: 20px;
+      }
+      h2 {
+        span {
+          font-size: 40px;
+          font-family: "Roboto-Light", "Roboto", "游ゴシック体", "Yu Gothic", YuGothic, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+          height: 40px;
+          width: 180px;
+          display: inline-block;
+        }
+        height: 60px;
+        width: 100vw;
+        text-align: center;
+        margin: auto;
+        padding-top: 10px;
+        letter-spacing: 2px !important;
+        position: relative;
+        overflow: hidden;
+      }
+      h2:after {
+        position: absolute;
+        content: "";
+        height: 1px;
+        width: 300px;
+        background: -webkit-linear-gradient(0deg, rgba(139, 195, 74, 1), rgba(139, 195, 74, .5) 75%, transparent);
+        margin-top: 20px;
+        margin-left: 30px;
+      }
+      /*
+      #profile-hn:before {
+        content: "Name";
+      }
+      #profile-hn {
+        font-size: 35px;
+        height: 40px;
+        font-family: "Roboto-Light", "Roboto", "游ゴシック体", "Yu Gothic", YuGothic, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+        line-height: 40px;
+        text-align: center;
+        width: 300px;
+        margin: auto;
+      }
+      */
+      #profile-aboutme, #profile-like, #profile-link {
+        margin-top: 30px;
+        font-size: 25px;
+        ul li {
+          line-height: 30px;
+        }
+      }
+      #profile-aboutme {
+        margin-top: unset;
+        height: 180px;
+      }
+      #profile-like {
+        height: 210px;
+        .lol-title {
+          color: rgba(255, 152, 0, 1);
+        }
+        .line-title {
+          font-family: "Roboto-Light", "Roboto", "游ゴシック体", "Yu Gothic", YuGothic, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+        }
+        .acuo-title {
+          color: rgba(63, 81, 181, 1);
+        }
+        /*
+        .denno-coil-title {
+          #coil-green {
+            color: #59ae91;
+          }
+          #coil-orange {
+            color: #eb9370;
+          }
+          #coil-blue {
+            color: #62b7dc;
+          }
+          #coil-yellow {
+            color: #ffe354;
+          }
+        }
+        */
+      }
+    }
+    #profile-link {
+      height: 120px;
+    }
+  }
+}

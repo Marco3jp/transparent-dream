@@ -2,11 +2,15 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=480">
     <title>Profile | Transparent Dream</title>
+    <link rel="preload" href="../font/Roboto-Light.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../css/html5reset-1.6.1.css" as="style" type="text/css">
     <link rel="preload" href="../css/background.css" as="style" type="text/css">
+    <link rel="preload" href="css/style.css" as="style" type="text/css">
     <link rel="stylesheet" href="../css/html5reset-1.6.1.css" type="text/css">
     <link rel="stylesheet" href="../css/background.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
 <div id="wrapper">
@@ -22,28 +26,34 @@
     </div>
     <div id="content">
         <div id="profile">
-            <div id="profile-hn">
+            <h1><span>Profile</span></h1>
+            <!--div id="profile-hn">
                 Marco
-            </div>
+            </div-->
             <div id="profile-aboutme">
+                <h2><span>AboutMe</span></h2>
                 <ul>
                     <li>学部生</li>
-                    <li>css,js,Web,front一年目</li>
+                    <li>Webフロント(CSS/JS)趣味一年目</li>
                     <li>文章を書く人間</li>
                     <li>めんどくさいオタク</li>
                 </ul>
             </div>
             <div id="profile-like">
+                <h2><span>Like</span></h2>
                 <ul>
-                    <li><a href="https://jp.leagueoflegends.com/ja/">League of Legends</a></li>
-                    <li>眼鏡</li>
-                    <li>線</li>
+                    <li><span class="lol-title">League of Legends</span></li>
+                    <li>眼鏡(特にハーフリム)</li>
+                    <li><span class="line-title">Thin Line(like background)</span></li>
                     <li>堀江晶太の楽曲</li>
-                    <li><a href="https://www.lotte.co.jp/products/brand/acuo/">ACUO</a></li>
-                    <li><a href="http://www.tokuma.jp/coil/index.html">電脳コイル</a></li>
+                    <li><span class="acuo-title">ACUO</span></li>
+                    <!--li><span class="denno-coil-title"><span id="coil-green">電脳</span><span
+                            id="coil-orange">コ</span><span id="coil-blue">イ</span><span id="coil-yellow">ル</span></span>
+                    </li-->
                 </ul>
             </div>
             <div id="profile-link">
+                <h2><span>Links</span></h2>
                 <ul>
                     <li><a href="https://twitter.com/Marco_utau">Twitter(@Marco_utau)</a></li>
                     <li><a href="https://github.com/Marco3jp">Github(Marco3jp)</a></li>
