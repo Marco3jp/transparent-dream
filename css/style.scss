@@ -67,7 +67,7 @@
 
 @media (min-height: 1040px) {
   :root {
-    --title-position-y: 50%;
+    --title-position-y: calc(50vh - 60px);
   }
 }
 
