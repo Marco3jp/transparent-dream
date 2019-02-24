@@ -137,7 +137,6 @@
   }
 }
 
-/* for latin */
 @font-face {
   font-family: 'Muli-Light';
   font-style: normal;
@@ -150,7 +149,7 @@
 * {
   box-sizing: border-box;
   letter-spacing: 1px;
-  font-family: "Roboto", "游ゴシック体", "Yu Gothic", YuGothic, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  font-family: 'Roboto-Light', -apple-system, Roboto, Arial, YuGothic, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'IPAGothic', 'MigMix 1P', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
 }
 
 .setDiv {
@@ -161,9 +160,11 @@
   height: 100vh;
   width: 100vw;
   color: rgba(255, 249, 245, 1);
+
   #title {
     margin-top: var(--title-position-y);
     width: 50%;
+
     h1 {
       margin-left: var(--title-position-x);
       animation: 1s opening-h1 ease-in-out forwards;
@@ -171,10 +172,12 @@
       color: rgba(139, 195, 74, 1);
       font-weight: unset;
       border-bottom: 1px solid rgba(255, 152, 0, 1);
+
       span {
         font-size: 60px;
         font-family: 'Muli-Light', 'Roboto', sans-serif;
       }
+
       span:first-child {
         margin-right: 10px;
         animation: 750ms opening-h1-transparent ease-in-out both 1s;
@@ -185,10 +188,12 @@
   #index {
     margin-left: 180px;
     margin-top: calc(var(--title-position-y) - 120px);
+
     ul {
       li {
         height: 60px;
         overflow: hidden;
+
         a {
           line-height: 60px;
           font-size: 45px;
@@ -197,6 +202,7 @@
           color: rgba(139, 195, 74, 1);
         }
       }
+
       li:first-child {
         margin-bottom: 60px;
       }
@@ -207,18 +213,23 @@
 
       li:nth-child(1) {
         animation: 0.5s opening-index-up ease-in-out both;
+
         a {
           animation: 0.5s opening-index-shadow ease-in-out both 1s;
         }
       }
+
       li:nth-child(2) {
         animation: 0.5s opening-index-up ease-in-out both .25s;
+
         a {
           animation: 0.5s opening-index-shadow ease-in-out both 1.5s;
         }
       }
+
       li:nth-child(3) {
         animation: 0.5s opening-index-up ease-in-out both .5s;
+
         a {
           animation: 0.5s opening-index-shadow ease-in-out both 2s;
         }
@@ -233,10 +244,12 @@
   }
   #wrapper {
     height: 720px;
+
     #title {
       width: 100%;
       height: 180px;
       margin-top: 60px;
+
       h1 {
         margin-top: 60px;
         margin-left: 60px;
@@ -246,6 +259,7 @@
         font-weight: unset;
         border-bottom: 1px solid rgba(255, 152, 0, 1);
         text-align: center;
+
         span {
           display: block;
           height: 60px;
@@ -253,31 +267,37 @@
           font-size: 48px;
           font-family: 'Muli-Light', 'Roboto', sans-serif;
         }
+
         span:first-child {
           animation: 750ms opening-h1-transparent ease-in-out both 1s;
         }
       }
     }
+
     #index {
       margin-left: 60px;
       margin-top: 60px;
+
       ul {
         li {
           height: 60px;
           overflow: hidden;
           text-align: center;
           width: 360px;
+
           a {
             line-height: 60px;
             font-size: 50px;
-            font-family: 'Muli-Light', 'Roboto', sans-serif;
+            font-family: 'Muli-Light', Roboto, -apple-system, Arial, YuGothic, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'IPAGothic', 'MigMix 1P', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
             text-decoration: none;
             color: rgba(139, 195, 74, 1);
           }
         }
+
         li:first-child {
           margin-bottom: 60px;
         }
+
         li:last-child {
           margin-top: 60px;
         }
