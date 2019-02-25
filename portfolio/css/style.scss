@@ -1,0 +1,57 @@
+#wrapper {
+  #content {
+    #portfolio {
+      color: rgba(33, 33, 33, 1);
+      width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      font-size: 20px;
+      line-height: 1.5em;
+      letter-spacing: 1px;
+      h1 {
+        font-size: 30px;
+        padding: 15px 0;
+        margin-left: 1em;
+      }
+      #service-list {
+        margin-top: 29px;
+        letter-spacing: 1px;
+        font-size: 30px;
+
+        li {
+          box-sizing: border-box;
+          display: block;
+          width: 800px;
+          height: 61px;
+          text-align: center;
+          margin-left: auto;
+          margin-right: auto;
+          border: 1px solid rgba(33, 33, 33, 1);
+
+          &:not(:last-of-type) {
+            margin-bottom: 29px;
+          }
+          span {
+            display: block;
+            color: rgba(33, 33, 33, 1);
+            padding: 15px 0;
+          }
+          a {
+            display: block;
+            padding: 15px 0;
+            width: 100%;
+            color: rgba(33, 33, 33, 1);
+            transition: background 300ms;
+
+            &:hover {
+              background: rgba(139, 195, 74, .5);
+            }
+
+          }
+        }
+      }
+    }
+  }
+}

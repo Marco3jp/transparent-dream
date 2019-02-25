@@ -2,11 +2,17 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=480">
     <title>Profile | Transparent Dream</title>
+    <link rel="preload" href="../font/Roboto-Light.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../css/html5reset-1.6.1.css" as="style" type="text/css">
     <link rel="preload" href="../css/background.css" as="style" type="text/css">
+    <link rel="preload" href="../css/navigator.css" as="style" type="text/css">
+    <link rel="preload" href="css/style.css" as="style" type="text/css">
     <link rel="stylesheet" href="../css/html5reset-1.6.1.css" type="text/css">
     <link rel="stylesheet" href="../css/background.css" type="text/css">
+    <link rel="stylesheet" href="../css/navigator.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
 <div id="wrapper">
@@ -20,35 +26,52 @@
             <div id="bg-bold-y"></div>
         </div>
     </div>
+    <nav id="transparent-dream-navigator">
+        <ul id="transparent-dream-navigator-list">
+            <li id="transparent-dream-navigator-to-home"><a href="../">Home</a></li>
+            <li id="transparent-dream-navigator-to-namecard"><a href="../namecard">Namecard</a></li>
+            <li id="transparent-dream-navigator-to-profile"><a href="../profile">Profile</a></li>
+            <li id="transparent-dream-navigator-to-portfolio"><a href="../portfolio">Portfolio</a></li>
+        </ul>
+    </nav>
+
     <div id="content">
-        <div id="profile">
-            <div id="profile-hn">
-                Marco
-            </div>
-            <div id="profile-aboutme">
-                <ul>
-                    <li>学部生</li>
-                    <li>css,js,Web,front一年目</li>
-                    <li>文章を書く人間</li>
-                    <li>めんどくさいオタク</li>
-                </ul>
-            </div>
-            <div id="profile-like">
-                <ul>
-                    <li><a href="https://jp.leagueoflegends.com/ja/">League of Legends</a></li>
-                    <li>眼鏡</li>
-                    <li>線</li>
-                    <li>堀江晶太の楽曲</li>
-                    <li><a href="https://www.lotte.co.jp/products/brand/acuo/">ACUO</a></li>
-                    <li><a href="http://www.tokuma.jp/coil/index.html">電脳コイル</a></li>
-                </ul>
-            </div>
-            <div id="profile-link">
-                <ul>
-                    <li><a href="https://twitter.com/Marco_utau">Twitter(@Marco_utau)</a></li>
-                    <li><a href="https://github.com/Marco3jp">Github(Marco3jp)</a></li>
-                </ul>
-            </div>
+        <article id="profile">
+            <h1>プロフィール</h1>
+            <ul>
+                <li><h2>ハンドルネーム</h2>
+                    <ul>
+                        <li>Marco</li>
+                    </ul>
+                </li>
+                <li><h2>ジョブ</h2>
+                    <ul>
+                        <li>学部生</li>
+                        <li>サブジョブは未実装</li>
+                    </ul>
+                </li>
+                <li><h2>性別</h2>
+                    <ul>
+                        <li>男</li>
+                    </ul>
+                </li>
+                <li><h2>アカウントたち</h2>
+                    <ul>
+                        <li><a href="https://github.com/Marco3jp">GitHub</a></li>
+                        <li><a href="https://twitter.com/Marco_utau">Twitter</a></li>
+                        <li><a href="http://marco3jp.hatenablog.com">HatenaBlog</a></li>
+                        <li><a href="https://www.last.fm/user/Marco_utau">Last.fm</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </article>
+        <div id="hub">
+            <ul>
+                <li><a href="../myflavor" class="links">嗜好まとめ</a></li>
+                <li><a href="../portfolio" class="links">ポートフォリオ</a></li>
+                <li class="disable"><span class="links"><!--a href="https://works.marco.plus"-->制作物<br>ポータルサイト
+                    <!--/a--></span></li>
+            </ul>
         </div>
     </div>
 </div>

@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+@keyframes opening-opacity {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+body {
+  font-family: -apple-system, Arial, YuGothic, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'MigMix 1P', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+#wrapper {
+  #content {
+    overflow-y: auto;
+    height: calc(100vh - 61px);
+    animation: .75s opening-opacity ease-in-out forwards;
+    margin: auto;
+
+    ul > li > ul {
+      margin-left: 30px;
+    }
+  }
+
+  #profile {
+    color: rgba(33, 33, 33, 1);
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    font-size: 20px;
+    line-height: 1.5em;
+    letter-spacing: 1px;
+    h1 {
+      font-size: 30px;
+      padding: 15px 0;
+      margin-left: 1em;
+    }
+  }
+  #hub {
+    width: 1021px;
+    margin-top: 29px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    ul {
+      display: flex;
+      li {
+        display: block;
+        height: 59px;
+        width: 299px;
+        border: 1px solid rgba(66, 66, 66, 1);
+        text-align: center;
+        &:not(:last-of-type) {
+          margin-right: 59px;
+        }
+        &:not(:last-of-type) > .links {
+          padding-top: 15px;
+          padding-bottom: 15px;
+          font-size: 30px;
+        }
+        &:last-of-type > .links {
+          padding-top: 5px;
+          padding-bottom: 5px;
+          font-size: 25px;
+        }
+        &.disable {
+          background: rgba(236, 239, 241, .5);
+          .links {
+            color: rgba(158, 158, 158, .5);
+          }
+        }
+        a {
+          text-decoration: none;
+          transition: background 300ms;
+          &:hover {
+            background: rgba(139, 195, 74, .5);
+          }
+        }
+        .links {
+          display: block;
+          letter-spacing: 1px;
+          color: rgba(33, 33, 33, 1);
+        }
+      }
+    }
+  }
+}

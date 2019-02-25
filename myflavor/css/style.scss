@@ -1,0 +1,97 @@
+body {
+  font-family: -apple-system, Arial, YuGothic, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'MigMix 1P', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+#wrapper {
+  #content {
+    overflow-y: auto;
+    height: calc(100vh - 61px);
+    label {
+      cursor: pointer;
+    }
+    #myflavor {
+      color: rgba(33, 33, 33, 1);
+      width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      font-size: 20px;
+      line-height: 1.5em;
+      letter-spacing: 1px;
+
+      h1 {
+        font-size: 30px;
+        padding: 15px 0;
+        margin-left: 1em;
+      }
+
+      q {
+        quotes: unset;
+        &::before {
+          content: open-quote;
+        }
+        &::after {
+          content: close-quote;
+        }
+      }
+
+      .underline {
+        text-decoration: underline;
+      }
+
+      #myflavor-list {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        label {
+          text-decoration: underline;
+        }
+      }
+
+      ul > li > ul {
+        margin-left: 30px;
+      }
+    }
+    #myflavor-detail {
+      h2, input, .description-for-no-css {
+        display: none;
+      }
+      .myflavor-detail-wrapper {
+        position: fixed;
+        top: 0;
+        display: none;
+        .myflavor-detail-bg {
+          height: 100vh;
+          width: 100vw;
+          background: rgba(33, 33, 33, .3);
+          label {
+            display: block;
+            height: 100%;
+            width: 100%;
+          }
+        }
+      }
+      .myflavor-detail-section {
+        box-sizing: border-box;
+        position: fixed;
+        top: 25%;
+        padding: 60px 90px;
+        width: 1000px;
+        line-height: 1.5em;
+        letter-spacing: 1px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        background: rgba(250, 250, 250, 1);
+        h3 {
+          font-size: 1.25em;
+          margin-bottom: 10px;
+        }
+      }
+      .myflavor-detail-checkbox:checked ~ .myflavor-detail-wrapper {
+        display: block;
+      }
+    }
+  }
+}
